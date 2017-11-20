@@ -3,6 +3,8 @@ import { Router } from 'react-native-router-flux';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 
+import scenes from '../routes/scenes';
+
 class AppContainer extends Component {
   static propTypes = {
     store: PropTypes.object.isRequired

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 class Home extends Component {
+  componentDidMount () {
+    this.props.setName();
+  }
+  
   render () {
     return (
       <View style={{
@@ -9,7 +13,7 @@ class Home extends Component {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-        <Text>Hello from Home Component</Text>
+        <Text>Hello {this.props.name}</Text>
       </View>
     );
   }
